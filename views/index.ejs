@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    <title>IOT Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Flood Status Section -->
+        <header class="jumbotron bg-dark">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <h1 class="text-white" style="margin-bottom: 40px;">Smart Flood Detection System</h1>
+                    <a id="adminButton" class="btn btn-info" href="/login" role="button">Admin Login</a>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Ultrasonic Senser</div>
+                            <div class="card-body">
+                                <p class="card-text waterLevel">
+                                    <storng>
+                                        <%= ultrasonicSensorReading %>
+                                    </storng>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Water Sensor</div>
+                            <div class="card-body">
+                                <p class="card-text waterLevel">
+                                    <storng>
+                                        <%= walterSensorReading %>
+                                    </storng>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white <%= colorLevel %> mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Flood Status</div>
+                            <div class="card-body">
+                                <p class="card-text waterLevel">
+                                    <storng>
+                                        <%= floodStatus %>
+                                    </storng>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Flood News and Instructions -->
+        <header class="jumbotron bg-dark">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <h1 class="text-white" style="margin-bottom: 40px;">Smart Flood Detection System</h1>
+                    <a id="adminButton" class="btn btn-info" href="/login" role="button">Admin Login</a>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Ultrasonic Senser</div>
+                            <div class="card-body">
+                                <p class="card-text waterLevel">
+                                    <storng>
+                                        <%= ultrasonicSensorReading %>
+                                    </storng>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Water Sensor</div>
+                            <div class="card-body">
+                                <p class="card-text waterLevel">
+                                    <storng>
+                                        <%= walterSensorReading %>
+                                    </storng>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white <%= colorLevel %> mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Flood Status</div>
+                            <div class="card-body">
+                                <p class="card-text waterLevel">
+                                    <storng>
+                                        <%= floodStatus %>
+                                    </storng>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail roundAndShadow">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
